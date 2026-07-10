@@ -1,0 +1,711 @@
+/*==========================
+Sherling & Yao Wedding
+==========================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Montserrat',sans-serif;
+background:#F8F5EF;
+color:#444;
+
+}
+
+.hero{
+
+height:100vh;
+
+background-image:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("../img/portada.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+text-align:center;
+
+}
+
+.contenido{
+
+color:white;
+
+z-index:2;
+
+padding:20px;
+
+}
+
+.contenido h3{
+
+font-weight:300;
+
+letter-spacing:4px;
+
+font-size:22px;
+
+margin-bottom:20px;
+
+}
+
+.contenido h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:90px;
+
+font-weight:600;
+
+margin-bottom:20px;
+
+}
+
+.contenido span{
+
+color:#d4af37;
+
+}
+
+.contenido h2{
+
+font-size:24px;
+
+font-weight:300;
+
+margin-bottom:40px;
+
+}
+
+.boton{
+
+display:inline-block;
+
+padding:16px 45px;
+
+background:#69755C;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.4s;
+
+font-size:18px;
+
+}
+
+.boton:hover{
+
+background:#556048;
+
+transform:translateY(-4px);
+
+}
+
+#contador{
+
+padding:100px 20px;
+
+background:white;
+
+text-align:center;
+
+}
+
+#contador h2{
+
+font-family:'Cormorant Garamond';
+
+font-size:60px;
+
+color:#69755C;
+
+margin-bottom:60px;
+
+}
+
+.contador{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.contador div{
+
+width:150px;
+
+height:150px;
+
+background:#69755C;
+
+border-radius:20px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.contador span{
+
+font-size:55px;
+
+font-weight:bold;
+
+}
+
+.contador p{
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+
+@media(max-width:768px){
+
+.contenido h1{
+
+font-size:60px;
+
+}
+
+.contenido h2{
+
+font-size:20px;
+
+}
+
+#contador h2{
+
+font-size:45px;
+
+}
+
+.contador div{
+
+width:120px;
+
+height:120px;
+
+
+}
+}
+
+
+#historia{
+    background:#f8f5ef;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.historia{
+    max-width:800px;
+    margin:auto;
+}
+
+.historia h2{
+    font-size:50px;
+    color:#6d7556;
+    margin-bottom:25px;
+}
+
+.historia p{
+    font-size:22px;
+    line-height:1.8;
+    color:#555;
+}#galeria{
+    padding:100px 20px;
+    background:#ffffff;
+    text-align:center;
+}
+
+#galeria h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:60px;
+    color:#69755C;
+    margin-bottom:50px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.galeria img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
+}/*==========================
+EVENTOS
+==========================*/
+
+#eventos{
+    background:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+#eventos h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:60px;
+    color:#69755C;
+    margin-bottom:60px;
+}
+
+.evento{
+    max-width:700px;
+    margin:40px auto;
+    background:#F8F5EF;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.evento h3{
+    font-size:34px;
+    color:#69755C;
+    margin-bottom:20px;
+}
+
+.evento p{
+    font-size:22px;
+    margin:10px 0;
+}/*==========================
+DRESS CODE
+==========================*/
+
+#dresscode{
+
+    background:#f8f5ef;
+    padding:100px 20px;
+    text-align:center;
+
+}
+
+#dresscode h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    color:#69755C;
+    margin-bottom:50px;
+
+}
+
+.dress{
+
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.dress h3{
+
+    font-size:36px;
+    color:#69755C;
+    margin-bottom:25px;
+
+}
+
+.dress p{
+
+    font-size:22px;
+    margin:15px 0;
+    line-height:1.7;
+
+}/*==============================
+PALETA DE COLORES
+==============================*/
+
+#paleta{
+    background:#F8F5EF;
+    padding:100px 20px;
+    text-align:center;
+}
+
+#paleta h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    color:#6D7556;
+    margin-bottom:20px;
+}
+
+#paleta p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:35px;
+}
+
+.colores{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.color{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.nota{
+    font-size:18px;
+    color:#777;
+}
+
+@media(max-width:768px){
+
+    #paleta h2{
+        font-size:45px;
+    }
+
+    .color{
+        width:70px;
+        height:70px;
+    }
+
+}/*==============================
+RSVP
+==============================*/
+
+#rsvp{
+    background:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+#rsvp h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    color:#6D7556;
+    margin-bottom:25px;
+}
+
+#rsvp p{
+    max-width:700px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:40px;
+}
+
+@media(max-width:768px){
+
+    #rsvp h2{
+        font-size:45px;
+    }
+
+    #rsvp p{
+        font-size:18px;
+    }
+
+}/*==============================
+BOTÓN MÚSICA
+==============================*/
+
+#btnMusica{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#69755C;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    z-index:9999;
+    transition:.3s;
+}
+
+#btnMusica:hover{
+    transform:scale(1.1);
+    background:#556048;
+}#calendario{
+
+    background:#f8f5ef;
+    padding:100px 20px;
+    text-align:center;
+
+}
+
+#calendario h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    color:#6d7556;
+    margin-bottom:20px;
+
+}
+#calendario{
+
+    background:#f8f5ef;
+    padding:100px 20px;
+    text-align:center;
+
+}
+
+#calendario h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    color:#6d7556;
+    margin-bottom:20px;
+
+}
+
+#calendario p{
+
+    font-size:22px;
+    color:#555;
+    margin-bottom:40px;
+
+}
+/*==============================
+CALENDARIO
+==============================*/
+
+#calendario{
+    background:#F8F5EF;
+    padding:100px 20px;
+    text-align:center;
+}
+
+#calendario h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    color:#6D7556;
+    margin-bottom:20px;
+}
+
+#calendario p{
+    font-size:24px;
+    margin-bottom:40px;
+    color:#555;
+}
+
+.calendar{
+    max-width:700px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:12px;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.calendar div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:65px;
+    height:65px;
+    margin:auto;
+    border-radius:50%;
+    font-size:20px;
+    font-weight:500;
+}
+
+.calendar div:nth-child(-n+7){
+    font-weight:bold;
+    color:#6D7556;
+    background:#EEF1E7;
+}
+
+.dia-boda{
+    background:#6D7556 !important;
+    color:white !important;
+    font-weight:bold;
+    transform:scale(1.1);
+    box-shadow:0 10px 25px rgba(109,117,86,.35);
+}
+
+@media(max-width:768px){
+
+    .calendar{
+        gap:8px;
+        padding:20px;
+    }
+
+    .calendar div{
+        width:42px;
+        height:42px;
+        font-size:16px;
+    }
+
+    #calendario h2{
+        font-size:42px;
+    }
+
+}
+.petalo{
+    position: fixed;
+    top: -50px;
+    pointer-events: none;
+    z-index: 999;
+    animation: caer linear forwards;
+}
+
+@keyframes caer{
+
+    0%{
+        transform: translateY(-50px) rotate(0deg);
+        opacity:1;
+    }
+
+    100%{
+        transform: translateY(120vh) rotate(720deg);
+        opacity:.1;
+    }
+
+}
+/*==================================
+RESPONSIVE CELULARES
+==================================*/
+
+@media screen and (max-width:768px){
+
+    .hero{
+        padding:20px;
+    }
+
+    .contenido h1{
+        font-size:54px;
+        line-height:1.1;
+    }
+
+    .contenido h2{
+        font-size:20px;
+    }
+
+    section h2{
+        font-size:42px !important;
+    }
+
+    .evento,
+    .dress,
+    .historia{
+        padding:30px 20px;
+    }
+
+    .evento p,
+    .dress p,
+    .historia p{
+        font-size:18px;
+    }
+
+    /* CONTADOR */
+
+    .contador{
+        gap:10px;
+    }
+
+    .contador div{
+        width:75px;
+        height:75px;
+        border-radius:14px;
+    }
+
+    .contador span{
+        font-size:28px;
+    }
+
+    .contador p{
+        font-size:12px;
+        margin-top:4px;
+    }
+
+    /* GALERÍA */
+
+    .galeria{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .galeria img{
+        height:220px;
+    }
+
+    /* CALENDARIO */
+
+    .calendar{
+        padding:20px;
+        gap:6px;
+    }
+
+    .calendar div{
+        width:38px;
+        height:38px;
+        font-size:15px;
+    }
+
+    /* PALETA */
+
+    .color{
+        width:60px;
+        height:60px;
+    }
+
+    /* BOTÓN MÚSICA */
+
+    #btnMusica{
+        width:55px;
+        height:55px;
+        font-size:24px;
+    }
+
+}
