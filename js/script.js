@@ -62,3 +62,10 @@ function crearPetalo(){
 }
 
 setInterval(crearPetalo, 450);
+function copiarCuenta(numero){
+
+navigator.clipboard.writeText(numero);
+
+alert("Número copiado: " + numero);
+
+}

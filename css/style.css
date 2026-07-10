@@ -826,111 +826,196 @@ ITINERARIO
 
 }
 
-/*==========================
-LLUVIA DE SOBRES
-==========================*/
+/* ===========================
+   LLUVIA DE SOBRES
+=========================== */
 
-#sobres{
-    background:#F8F5EF;
-    padding:100px 20px;
+.regalos{
+    padding:90px 20px;
+    background:#f8f6ef;
     text-align:center;
 }
 
-#sobres h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:58px;
-    color:#6D7556;
-    margin-bottom:45px;
-}
-
-.sobre-card{
-    max-width:760px;
+.regalos .contenedor{
+    max-width:1100px;
     margin:auto;
-    background:white;
-    padding:50px;
-    border-radius:25px;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
 
-.icono-sobre{
-    width:90px;
-    height:90px;
-    margin:0 auto 25px;
-    border-radius:50%;
-    background:#6D7556;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.icono-regalo{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    letter-spacing:6px;
+    font-size:14px;
+    color:#8a8a8a;
+    margin-bottom:5px;
+}
+
+.regalos h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:70px;
+    font-style:italic;
+    font-weight:300;
+    color:#6f7758;
+    margin-bottom:15px;
+}
+
+.linea{
+    width:120px;
+    height:2px;
+    background:#cbb68c;
+    margin:20px auto;
+}
+
+.regalos h3{
+    font-family:"Cormorant Garamond", serif;
     font-size:42px;
-}
-
-.sobre-card h3{
-    font-family:'Cormorant Garamond',serif;
-    font-size:34px;
-    color:#6D7556;
+    color:#b18b45;
     margin-bottom:20px;
 }
 
-.sobre-card p{
+.texto-regalo{
+    max-width:760px;
+    margin:auto;
     font-size:20px;
-    color:#555;
     line-height:1.8;
-    margin-bottom:18px;
+    color:#555;
 }
 
-.mensaje-final{
-    color:#B78A4C;
-    font-weight:600;
-    margin-top:25px;
+.cuentas{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.tarjeta-cuenta{
+
+    background:white;
+
+    width:360px;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.tarjeta-cuenta h4{
+
+    font-size:36px;
+
+    color:#6d7657;
+
+    margin-bottom:5px;
+
+}
+
+.tarjeta-cuenta span{
+
+    font-size:24px;
+
+    color:#b08b48;
+
+    letter-spacing:3px;
+
+}
+
+.tarjeta-cuenta hr{
+
+    margin:20px auto;
+
+    width:70%;
+
+    border:0;
+
+    border-top:1px solid #ddd;
+
+}
+
+.tarjeta-cuenta p{
+
+    margin:8px 0;
+
+    color:#555;
+
+    font-size:20px;
+
+}
+
+.tarjeta-cuenta h5{
+
+    font-size:38px;
+
+    color:#444;
+
+    margin:20px 0;
+
+    letter-spacing:2px;
+
+}
+
+.tarjeta-cuenta button{
+
+    background:#70775a;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.tarjeta-cuenta button:hover{
+
+    background:#5f654b;
+
+}
+
+.gracias{
+
+    margin-top:50px;
+
+    font-size:30px;
+
+    color:#6d7657;
+
+    font-family:"Cormorant Garamond", serif;
+
 }
 
 @media(max-width:768px){
 
-    #sobres h2{
-        font-size:42px;
-    }
+.regalos h2{
 
-    .sobre-card{
-        padding:35px 25px;
-    }
-
-    .icono-sobre{
-        width:70px;
-        height:70px;
-        font-size:32px;
-    }
-
-    .sobre-card h3{
-        font-size:28px;
-    }
-
-    .sobre-card p{
-        font-size:17px;
-    }
-
-}
-.cuenta{
-
-    background:#F8F5EF;
-    padding:25px;
-    margin:25px 0;
-    border-radius:18px;
-    border-left:6px solid #6D7556;
+font-size:48px;
 
 }
 
-.cuenta h4{
+.regalos h3{
 
-    color:#6D7556;
-    font-size:24px;
-    margin-bottom:15px;
+font-size:30px;
 
 }
 
-.cuenta p{
+.tarjeta-cuenta{
 
-    margin:8px 0;
-    font-size:18px;
+width:100%;
+
+}
 
 }
