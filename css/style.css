@@ -825,3 +825,112 @@ ITINERARIO
 }
 
 }
+
+/*==========================
+LLUVIA DE SOBRES
+==========================*/
+
+#sobres{
+    background:#F8F5EF;
+    padding:100px 20px;
+    text-align:center;
+}
+
+#sobres h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:58px;
+    color:#6D7556;
+    margin-bottom:45px;
+}
+
+.sobre-card{
+    max-width:760px;
+    margin:auto;
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.icono-sobre{
+    width:90px;
+    height:90px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    background:#6D7556;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+}
+
+.sobre-card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+    color:#6D7556;
+    margin-bottom:20px;
+}
+
+.sobre-card p{
+    font-size:20px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.mensaje-final{
+    color:#B78A4C;
+    font-weight:600;
+    margin-top:25px;
+}
+
+@media(max-width:768px){
+
+    #sobres h2{
+        font-size:42px;
+    }
+
+    .sobre-card{
+        padding:35px 25px;
+    }
+
+    .icono-sobre{
+        width:70px;
+        height:70px;
+        font-size:32px;
+    }
+
+    .sobre-card h3{
+        font-size:28px;
+    }
+
+    .sobre-card p{
+        font-size:17px;
+    }
+
+}
+.cuenta{
+
+    background:#F8F5EF;
+    padding:25px;
+    margin:25px 0;
+    border-radius:18px;
+    border-left:6px solid #6D7556;
+
+}
+
+.cuenta h4{
+
+    color:#6D7556;
+    font-size:24px;
+    margin-bottom:15px;
+
+}
+
+.cuenta p{
+
+    margin:8px 0;
+    font-size:18px;
+
+}
