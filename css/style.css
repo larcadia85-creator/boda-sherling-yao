@@ -122,8 +122,25 @@ transform:translateY(-4px);
 }
 
 /*==========================
-CONTADOR
+CONTADOR ELEGANTE
 ==========================*/
+
+#contador{
+
+    padding:90px 20px 60px;
+    text-align:center;
+
+}
+
+#contador h2{
+
+    font-family:'Cormorant Garamond', serif;
+    font-size:64px;
+    font-weight:600;
+    color:#7A8465;
+    margin-bottom:40px;
+
+}
 
 .contador{
 
@@ -132,25 +149,37 @@ CONTADOR
     align-items:center;
     gap:18px;
     flex-wrap:wrap;
-    margin-top:40px;
 
 }
 
 .contador div{
 
-    width:95px;
-    height:95px;
+    width:90px;
+    height:90px;
 
-    background:#fff;
+    background:rgba(255,255,255,.78);
 
-    border-radius:20px;
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(122,132,101,.15);
+
+    border-radius:22px;
 
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    box-shadow:0 12px 25px rgba(0,0,0,.07);
+
+    transition:.35s ease;
+
+}
+
+.contador div:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 20px 35px rgba(0,0,0,.10);
 
 }
 
@@ -166,12 +195,27 @@ CONTADOR
 .contador p{
 
     margin-top:8px;
-    font-size:15px;
-    color:#777;
+    font-size:14px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#8A8A8A;
 
 }
 
 @media(max-width:768px){
+
+#contador{
+
+padding:70px 20px 40px;
+
+}
+
+#contador h2{
+
+font-size:48px;
+margin-bottom:30px;
+
+}
 
 .contador{
 
@@ -183,19 +227,19 @@ gap:10px;
 
 width:70px;
 height:70px;
+border-radius:18px;
 
 }
 
 .contador span{
 
-font-size:28px;
+font-size:30px;
 
 }
 
 .contador p{
 
-font-size:12px;
-margin-top:5px;
+font-size:11px;
 
 }
 
