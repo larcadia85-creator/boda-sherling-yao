@@ -1079,53 +1079,68 @@ AGRADECIMIENTO
     font-family:'Cormorant Garamond',serif;
     font-size:60px;
     color:#7A8465;
-    margin-bottom:25px;
+    margin-bottom:35px;
 
 }
 
 .agradecimiento-card p{
 
     font-size:22px;
-    line-height:1.9;
+    line-height:2.1;
     color:#555;
-    margin-bottom:20px;
+    margin-bottom:30px;
+    text-align:center;
 
 }
 
 .agradecimiento-card h3{
 
-    margin-top:40px;
+    margin-top:50px;
     font-family:'Cormorant Garamond',serif;
-    font-size:38px;
+    font-size:40px;
     color:#B9985A;
     font-style:italic;
+    line-height:1.5;
+
+}
+
+.agradecimiento-card h3::before{
+
+    content:"";
+    display:block;
+    width:90px;
+    height:2px;
+    background:#D8C7A1;
+    margin:0 auto 25px auto;
 
 }
 
 @media(max-width:768px){
 
-.agradecimiento-card{
+    .agradecimiento-card{
 
-padding:35px 25px;
+        padding:35px 25px;
 
-}
+    }
 
-.agradecimiento-card h2{
+    .agradecimiento-card h2{
 
-font-size:42px;
+        font-size:42px;
 
-}
+    }
 
-.agradecimiento-card p{
+    .agradecimiento-card p{
 
-font-size:18px;
+        font-size:18px;
+        line-height:1.9;
+        margin-bottom:25px;
 
-}
+    }
 
-.agradecimiento-card h3{
+    .agradecimiento-card h3{
 
-font-size:30px;
+        font-size:30px;
 
-}
+    }
 
 }
